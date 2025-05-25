@@ -1,0 +1,6 @@
+rules:
+  Documents: ['pdf','doc','docx','txt']
+  Images:    ['jpg','jpeg','png','gif']
+  Archives:  ['zip','tar','gz','rar']
+  Videos:    ['mp4','mov','avi']
+  Others:    []
