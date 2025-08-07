@@ -18,35 +18,56 @@ An automated file organization Python app that reduces manual sorting time by 95
 git clone https://github.com/yourusername/downloads-organizer.git
 ```
 ## Go to the directory:
+```
 cd downloads-organizer
-
+```
 Run this command to install the organizer package so you can run commands like ```organizer organize --watch``` from anywhere in your terminal:
-pip install -e .
+```
+pip install -e
+```
 
 Then run this command to install all dependencies:
-pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 ## Commands to use the tool
 
-Organize existing files:
-`Scans your Downloads folder and organizes all files that are already there into categorized folders (Documents, Images, Videos, etc.`
-bashorganizer organize --existing
+- **Organize existing files:**
+  
+    Scans your Downloads folder and organizes all files that are already there into categorized folders (Documents, Images, Videos, etc.
+    
+   ```
+   bashorganizer organize --existing
+   ```
 
-Start watching for new files:
-`Starts real-time monitoring of your Downloads folder, automatically organizing any new files as soon as they're added`
-bashorganizer organize --watch
+- **Start watching for new files:**
 
-Find duplicates:
-`Scans the specified directory and finds groups of duplicate files using file hashing`
-bashorganizer find-duplicates ~/Downloads
-
-View configuration:
-`Displays your current configuration settings and file categorization rules so you can see what categories exist and which file extensions go where`
-bashorganizer config
-
+  Starts real-time monitoring of your Downloads folder, automatically organizing any new files as soon as they're added
+  
+  ```
+  bashorganizer organize --watch
+  ```
+  
+- **Find duplicates:**
+  
+  Scans the specified directory and finds groups of duplicate files using file hashing
+  
+  ```
+  bashorganizer find-duplicates ~/Downloads
+  ```
+  
+- **View configuration:**
+  
+  Displays your current configuration settings and file categorization rules so you can see what categories exist and which file extensions go where
+  
+  ```
+  bashorganizer config
+  ```
+  
 ## Technical Implementation
 
-###Core Components
+### Core Components
 
 ConfigManager: Handles YAML configuration loading and validation
 - FileCategorizer: Determines file categories and handles duplicate detection
@@ -54,7 +75,7 @@ ConfigManager: Handles YAML configuration loading and validation
 - FileWatcher: Monitors directories using the watchdog library
 - CLI: Provides command-line interface using Click
 
-###Key Features
+### Key Features
 
 File Hashing: MD5 checksums for accurate duplicate detection
 - Metadata Comparison: File size, modification time, and name analysis
