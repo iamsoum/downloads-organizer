@@ -24,7 +24,7 @@ Run this command to install the organizer package so you can run commands like `
 pip install -e .
 
 Then run this command to install all dependencies:
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 ## Commands to use the tool
 
