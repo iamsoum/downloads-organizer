@@ -16,8 +16,8 @@ An automated file organization Python app that reduces manual sorting time by 95
 
 ```bash
 git clone https://github.com/yourusername/downloads-organizer.git
-
-Go to the directory:
+```
+## Go to the directory:
 cd downloads-organizer
 
 Run this command to install the organizer package so you can run commands like ```organizer organize --watch``` from anywhere in your terminal:
