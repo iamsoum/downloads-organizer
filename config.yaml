@@ -4,3 +4,10 @@ rules:
   Archives:  ['zip','tar','gz','rar']
   Videos:    ['mp4','mov','avi']
   Others:    []
+
+settings:
+  source_dir: "~/Downloads"
+  target_dir: "~/Downloads/Organized"
+  watch_mode: true
+  handle_duplicates: true
+  create_date_folders: false
